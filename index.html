@@ -1,0 +1,18 @@
+<html>
+ 
+  <head>
+    <title>Embedding Elm in HTML!</title>
+    <script type="text/javascript" src="elm.js"></script>
+  </head>
+ 
+  <body>
+    <h1>Pressed keys:</h1>
+    <div id="keys" style="width:2%; height:400px;"></div>
+  </body>
+ 
+  <script type="text/javascript">
+    var keysDiv = document.getElementById('keys');
+    Elm.embed(Elm.Keys, keysDiv);
+  </script>
+ 
+</html>
